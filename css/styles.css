@@ -1,0 +1,84 @@
+/*
+Student Name: Dylan GarciaMartinez
+File Name: styles.css
+Date: 02/21/2022
+*/
+
+/*CSS Reset*/
+body, header, h1, h3, nav, main, footer, img, div{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*Style rules for body and images*/
+body{
+    background-color: #0d0d0d;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+}
+
+/*Style rules for header elements*/
+header{
+    text-align: center;
+    color: #fff;
+}
+
+/*Style rules for navigation elements*/
+nav{
+    background-color: #000099;
+    text-align: center;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    display: inline-block;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+
+nav li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    display: block;
+    padding: 1em 2em;
+}
+
+/*Style rule for main elements*/
+main{
+    color: #fff;
+    text-align: center;
+    margin: 2em 0em;
+}
+
+.email{
+    text-decoration: none;
+    color: #cc0000;
+    font-weight: bold;
+}
+
+/*Style rules for footer element*/
+footer{
+    text-align: center;
+    font-size: .75em;
+    color: #fff;
+    background-color: #000099;
+    padding: .25em 0em;
+}
+
+footer a{
+    color: #cc0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/**/
