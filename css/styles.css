@@ -5,7 +5,7 @@ Date: 02/21/2022
 */
 
 /*CSS Reset*/
-body, header, h1, h3, nav, main, footer, img, div{
+body, header, h1, h3, nav, main, footer, img, div, ul{
     margin: 0;
     padding: 0;
     border: 0;
@@ -24,25 +24,39 @@ img{
     margin-bottom: 1em;
 }
 
+/*Show mobile class hide desktop class*/
+.mobile{
+    display: block;
+}
+
+.desktop{
+    display: none;
+}
+
 /*Style rules for header elements*/
 header{
     text-align: center;
     color: #fff;
+    font-size: 1.50em;
+    font-family: 'Arvo', serif;
 }
 
 /*Style rules for navigation elements*/
 nav{
     background-color: #000099;
-    text-align: center;
+    position: sticky;
+    top: 0;
 }
 
 nav ul{
     list-style-type: none;
+    text-align: center;
 }
 
 nav li{
-    display: inline-block;
-    font-family: Verdana, Tahoma, sans-serif;
+    display: block;
+    font-family: 'Fredoka', sans-serif;
+    border: 1px solid #000;
 }
 
 nav li a{
@@ -58,12 +72,17 @@ main{
     color: #fff;
     text-align: center;
     margin: 2em 0em;
+    font-family: 'Fredoka', sans-serif;
 }
 
 .email{
     text-decoration: none;
     color: #cc0000;
     font-weight: bold;
+}
+
+.round{
+    border-radius: 5px;
 }
 
 /*Style rules for footer element*/
