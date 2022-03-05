@@ -13,7 +13,7 @@ body, header, h1, h3, nav, main, footer, img, div, ul{
 
 /*Style rules for body and images*/
 body{
-    background-color: #0d0d0d;
+    background: linear-gradient(#0d0d0d 70%, #202020);
 }
 
 img{
@@ -100,4 +100,66 @@ footer a{
     font-weight: bold;
 }
 
-/**/
+/*Media Query for Tablet*/
+@media screen and (min-width: 480px), print{
+
+    /*Hide mobile class, show desktop class*/
+    .mobile{
+        display: none;
+    }
+
+    .desktop{
+        display: block;
+    }
+
+    /*Style rules for nav*/
+    nav li{
+        display: inline-block;
+        border: none;
+        padding: 0 2%;
+        
+    }
+
+    nav li a:hover{
+        background-color: #000;
+        color: #000099;
+    }
+    
+}
+
+/*Media Query for Desktop*/
+@media screen and (min-width: 1000px),print {
+
+    /*Style rules for main*/
+    #image{
+        float: left;
+        margin: 2% 5%;
+        /*padding: 1.2% auto;*/
+        /*padding-left: 5%;*/
+    }
+
+    #currentclubs, #defunctclubs, #upcomingclubs{
+        margin: 1.2% 0;
+        padding: 0.7% 0;
+    }
+
+    #currentevents, #upcomingevents, #pastevents{
+        margin: 4% 0;
+        /*padding: 2% 0;*/
+    }
+
+    /*Style rule for footer*/
+    footer{
+        clear: left;
+    }
+
+}
+
+@media print{
+
+    body{
+        background-color: #fff;
+        color: #000;
+    }   
+
+}
