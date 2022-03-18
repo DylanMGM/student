@@ -172,12 +172,15 @@ footer a{
 /*Media Query for Desktop*/
 @media screen and (min-width: 1000px),print {
 
+    /*Hide mobile-tab class*/
+    .mobile-tab{
+        display: none;
+    }
+
     /*Style rules for main*/
     #image{
         float: left;
         margin: 2% 5%;
-        /*padding: 1.2% auto;*/
-        /*padding-left: 5%;*/
     }
 
     #currentclubs, #defunctclubs, #upcomingclubs{
@@ -199,9 +202,84 @@ footer a{
         grid-column: 1/span 3;
     }
 
+    /*Style rules for table*/
+    table.club{
+        border: 2px solid #000099;
+        border-collapse: collapse;
+        margin-right: 5%;
+        margin-top: 4%;
+    }
+
+    table.club th{
+        padding: 1% 0;
+        background-color: #000099;
+    }
+
+    table.club td{
+        text-align: left;
+        padding: 1% 1.5%;
+    }
+
+    tr:nth-child(odd){
+        background-color: #202020;
+        color: #fff;
+    }
+
+    table.event{
+        border: 2px solid #000099;
+        border-collapse: collapse;
+        margin-top: 7%;
+        margin-right: 5%;
+        table-layout: fixed;
+    }
+
+    table.event td{
+        text-align: left;
+        width: .5%;
+        padding: 1% 2%;
+    }
+
+    table.event th{
+        padding: 1%;
+    }
+
     /*Style rule for footer*/
     footer{
         clear: left;
+    }
+
+    /*Style rules for form elements*/
+    fieldset, input, select{
+        margin-bottom: 2%;
+    }
+
+    form{
+        width: 25%;
+        color: #fff;
+        margin: 0 auto;
+        font-family: 'Fredoka', sans-serif;
+    }
+
+    form #submit{
+        margin: 0 auto 2% auto;
+        border: none;
+        display: block;
+        padding: 2%;
+        background-color: #000099;
+        font-size: 1em;
+        border-radius: 10px;
+        font-family: 'Fredoka', sans-serif;
+        color: #fff;
+    }
+
+    input, label{
+        display: block;
+    }
+
+    h2{
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
     }
 
 }
