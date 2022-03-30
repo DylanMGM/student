@@ -5,7 +5,7 @@ Date: 02/21/2022
 */
 
 /*CSS Reset*/
-body, header, h1, h3, nav, main, footer, img, div, ul, section, figure, figcaption{
+body, header, h1, h3, nav, main, footer, img, div, ul, section, figure, figcaption, video, audio{
     margin: 0;
     padding: 0;
     border: 0;
@@ -24,6 +24,19 @@ img{
     margin-bottom: 1em;
 }
 
+video{
+    display: block;
+    max-width: 50%;
+    height: auto;
+    margin: 0 auto 2% auto;
+}
+
+#video h2{
+    padding: 2% 0 1% 0;
+    font-weight: bold;
+}
+
+
 /*Style rules for all elements*/
 *{
     box-sizing: border-box;
@@ -35,6 +48,10 @@ img{
 }
 
 .desktop{
+    display: none;
+}
+
+#form{
     display: none;
 }
 
@@ -177,6 +194,10 @@ footer a{
         display: none;
     }
 
+    #form{
+        display: block;
+    }
+
     /*Style rules for main*/
     #image{
         float: left;
@@ -277,6 +298,12 @@ footer a{
     }
 
     h2{
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    h3{
         color: #fff;
         font-weight: bold;
         text-align: center;
