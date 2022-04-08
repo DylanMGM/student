@@ -47,7 +47,7 @@ video{
     display: block;
 }
 
-.desktop{
+.desktop, #menu-links{
     display: none;
 }
 
@@ -61,6 +61,7 @@ header{
     color: #fff;
     font-size: 1.50em;
     font-family: 'Arvo', serif;
+    margin-top: 50px;
 }
 
 /*Style rules for navigation elements*/
@@ -69,23 +70,21 @@ nav{
     top: 0;
 }
 
-nav ul{
-    list-style-type: none;
-    text-align: center;
-}
-
-nav li{
-    display: block;
-    font-family: 'Fredoka', sans-serif;
-    border: 1px solid #000;
-}
-
-nav li a{
-    text-decoration: none;
-    font-weight: bold;
+.mobile-nav a{
     color: #fff;
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 3%;
     display: block;
-    padding: 1em 2em;
+}
+
+.mobile-nav a.menu-icon{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 /*Style rule for main elements*/
@@ -103,6 +102,11 @@ main{
     margin: 5px auto;
     border: 5px solid #202020;
     box-shadow: 2px 2px 5px #000099;
+    cursor: pointer;
+}
+
+#rc:hover {
+    transform: translate(10px, 10px);
 }
 
 figcaption{
@@ -119,7 +123,7 @@ figcaption{
 aside{
     font-size: 1.3em;
     font-weight: bold;
-    text-shadow: 2px 2px 3px#fff;
+    text-shadow: 2px 2px 3px #fff;
 
 }
 
@@ -190,12 +194,37 @@ footer a{
 @media screen and (min-width: 1000px),print {
 
     /*Hide mobile-tab class*/
-    .mobile-tab{
+    .mobile-tab, .mobile-nav{
         display: none;
     }
 
     #form{
         display: block;
+    }
+
+    /* Style rule for header */
+    header {
+        margin-top: 0;
+    }
+
+    /*Style rules for nav*/
+    nav ul{
+        list-style-type: none;
+        text-align: center;
+    }
+    
+    nav li{
+        display: inline-block;
+        font-family: 'Fredoka', sans-serif;
+        border: none;
+    }
+    
+    nav li a{
+        text-decoration: none;
+        font-weight: bold;
+        color: #fff;
+        display: block;
+        padding: 1em 2em;
     }
 
     /*Style rules for main*/
@@ -309,6 +338,28 @@ footer a{
         text-align: center;
     }
 
+}
+
+/* Desktop viewport animation */
+@-webkit-keyframes text-animation {
+    0% { font-size: 1em; }
+    50% { font-size: 1.50em; }
+    100% { font-size: 1em; }
+}
+
+@keyframes text-animation {
+    0% { font-size: 1em; }
+    50% { font-size: 1.50em; }
+    100% { font-size: 1em; }
+}
+
+figcaption {
+    animation-name: text-animation;
+    animation-delay: 2s;
+    animation-duration: 3s;
+    -webkit-animation-name: text-animation;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-duration: 3s;
 }
 
 @media print{

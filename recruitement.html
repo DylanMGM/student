@@ -18,15 +18,29 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
+
+    <!--Mobile Nav-->
+		<nav class="mobile-nav">
+			<div id="menu-links">
+				<a href="index.html">Home</a>
+                <a href="clubs.html">Clubs</a>
+                <a href="events.html">Events</a>
+                <a href="recruitement.html">Recruitment</a>
+			</div>
+			<a class="menu-icon" onclick="hamburger()">
+				<div>&#9776;</div>
+			</a>
+		</nav>
 
     <header>
         <h1>Club Recruitment</h1>
     </header>
 
-    <nav>
+    <nav class="desktop">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="clubs.html">Clubs</a></li>
@@ -43,22 +57,22 @@
         </aside>
 
         
-        <figure id="rc">
+        <figure id="rc" onclick="window.scrollTo(0,800);">
             <img src="images/computer.jpg" alt="computer being built">
             <figcaption>Join the Computer & Video Games club</figcaption>
         </figure>
 
-        <figure id="rc">
+        <figure id="rc" onclick="window.scrollTo(0,800);">
             <img src="images/coding.jpg" alt="html code">
             <figcaption>Join the coding club</figcaption>
         </figure>
 
-        <figure id="rc">
+        <figure id="rc" onclick="window.scrollTo(0,800);">
             <img src="images/anime.png" alt="taiga aisaka">
             <figcaption>Join the anime & manga club</figcaption>
         </figure>
 
-        <figure id="rc">
+        <figure id="rc" onclick="window.scrollTo(0,800);">
             <img src="images/repair.jpg" alt="soldering a pcb">
             <figcaption>Join the repair club</figcaption>
         </figure>
@@ -118,6 +132,8 @@
     <footer>
         <p>If you have any questions related to clubs, events, or this website please contact Dylan Garcia-Martinez from student council at <a href="mailto:dylanmgarciam@gmail.com">dylanmgarciam@gmail.com</a></p>
     </footer>
+
+    <script src="scripts/script.js"></script>
 
 </body>
 
