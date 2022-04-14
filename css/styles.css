@@ -36,6 +36,22 @@ video{
     font-weight: bold;
 }
 
+/* Style rules for skip link */
+.skip {
+    position: absolute;
+    left: -999px;
+}
+
+.skip:focus {
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    top: auto;
+    left: auto;
+    right: 1px;
+    z-index: 1;
+}
+
 
 /*Style rules for all elements*/
 *{
@@ -152,6 +168,11 @@ footer a{
     font-weight: bold;
 }
 
+.social img{
+    display: inline-block;
+    padding: 2%;
+}
+
 /*Media Query for Tablet*/
 @media screen and (min-width: 480px), print{
 
@@ -186,6 +207,21 @@ footer a{
 
     aside{
         grid-column: 1/span 2;
+    }
+
+    /* Style rules for footer area */
+    footer {
+        overflow: auto;
+    }
+
+    .contact {
+        float: left;
+        width: 75%;
+    }
+
+    .social {
+        float: right;
+        width: 25%;
     }
     
 }
